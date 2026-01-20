@@ -347,12 +347,13 @@ header {
   border: 1px solid white;
 }
 
-/* create a footer section */
+
 .footer {
   background-image: url(./images/footer-bg.png);
   background-position: center;
-  background-size: cover;
-  padding: 100px;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  width: 100%;
 }
 .fotter-img {
   display: flex;
@@ -465,9 +466,6 @@ header {
     font-size: 16px;
   }
 
-/* .bg-color, .container h2 {
-    font-size: 25px;
-} */
 
 .bg-color, .container h2 {
     
@@ -486,9 +484,7 @@ header {
     grid-column: span 1;
     grid-row: span 1;
   }
-  .bg-color .container h2 {
-    font-size: 38px;
-  }
+  
 
   .featuerd {
     grid-template-columns: repeat(1, 1fr);
@@ -510,11 +506,42 @@ header {
     flex-wrap: wrap;
   }
 
-  /* footer section */
  
+ .footer {
+    background-image: url(./images/footer-bg.png);
+        background-position: center;
+    }
+
+  
+    .fotter-img {
+        padding-top: 60px; 
+    }
+
+    .social-container {
+        display: grid; 
+        grid-template-columns: repeat(2, 1 row); 
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px; 
+        justify-items: start; 
+        width: fit-content;
+        margin: 0 auto;
+     }
+
+    .social-item {
+        gap: 8px;
+    }
+
+    .social-item p {
+        font-size: 16px; 
+    }
+
+    .copy-right {
+        margin-top: 30px;
+        font-size: 14px;
+    } 
 
 }
 
-/* make a responsive website for medium device */
-@media screen and (max-width: 992px) {
-}
+
+
+
