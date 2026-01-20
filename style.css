@@ -13,10 +13,10 @@ body {
   margin: 0 auto;
 }
 .hamburger-icon {
-    display: none;
+  display: none;
 }
 header {
-  background-color: #1A0B2E;
+  background-color: #1a0b2e;
   border-bottom: 1px solid #ffffff2d;
 }
 .nav-section {
@@ -136,7 +136,6 @@ header {
   font-weight: 700;
   text-align: center;
   color: #ffffff;
- 
 }
 .about-section p {
   color: #ffffffbd;
@@ -252,7 +251,8 @@ header {
   background-color: #1a0b2e;
 }
 
-.bg-color, .container h2 {
+.bg-color,
+.container h2 {
   color: #ffffff;
   text-align: center;
   font-size: 48px;
@@ -347,12 +347,11 @@ header {
   border: 1px solid white;
 }
 
-
 .footer {
   background-image: url(./images/footer-bg.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   width: 100%;
 }
 .fotter-img {
@@ -397,14 +396,14 @@ header {
 
 @media screen and (max-width: 576px) {
   .hamburger-icon {
-    display:block !important;
+    display: block !important;
   }
 
   header {
     width: 100%;
     background-color: #1a0b2e;
   }
-  
+
   .container {
     max-width: 95%;
     padding: 0 20px;
@@ -449,7 +448,7 @@ header {
     font-size: 16px;
   }
 
-  .about{
+  .about {
     padding: 50px 0;
   }
 
@@ -466,12 +465,10 @@ header {
     font-size: 16px;
   }
 
-
-.bg-color, .container h2 {
-    
+  .bg-color,
+  .container h2 {
     font-size: 34px;
-    
-}
+  }
 
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
@@ -484,7 +481,6 @@ header {
     grid-column: span 1;
     grid-row: span 1;
   }
-  
 
   .featuerd {
     grid-template-columns: repeat(1, 1fr);
@@ -506,42 +502,181 @@ header {
     flex-wrap: wrap;
   }
 
- 
- .footer {
+  .footer {
     background-image: url(./images/footer-bg.png);
-        background-position: center;
-    }
+    background-position: center;
+  }
 
-  
-    .fotter-img {
-        padding-top: 60px; 
-    }
+  .fotter-img {
+    padding-top: 60px;
+  }
 
-    .social-container {
-        display: grid; 
-        grid-template-columns: repeat(2, 1 row); 
-        grid-template-columns: 1fr 1fr; 
-        gap: 20px; 
-        justify-items: start; 
-        width: fit-content;
-        margin: 0 auto;
-     }
+  .social-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1 row);
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: start;
+    width: fit-content;
+    margin: 0 auto;
+  }
 
-    .social-item {
-        gap: 8px;
-    }
+  .social-item {
+    gap: 8px;
+  }
 
-    .social-item p {
-        font-size: 16px; 
-    }
+  .social-item p {
+    font-size: 16px;
+  }
 
-    .copy-right {
-        margin-top: 30px;
-        font-size: 14px;
-    } 
-
+  .copy-right {
+    margin-top: 30px;
+    font-size: 14px;
+  }
 }
 
 
 
 
+/* make a responsive website for medium device */
+
+@media screen and (max-width: 992px) {
+  .hamburger-icon {
+    display: block !important;
+  }
+
+  header {
+    width: 100%;
+    background-color: #1a0b2e;
+  }
+
+  .container {
+    max-width: 95%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .nav-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+  }
+  .list-style,
+  .btn {
+    display: none;
+  }
+  .hamburger-icon {
+    display: block;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  /* bannar section responsive */
+
+  .bannar-section {
+    padding: 50px 0px;
+  }
+  .banner-contant {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .banner-contant h1 {
+    font-size: 30px;
+  }
+
+  .btn-1 {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+  .btn-2 {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  .about {
+    padding: 50px 0;
+  }
+
+  .about-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-section h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .about-section p {
+    font-size: 16px;
+  }
+
+  .bg-color,
+  .container h2 {
+    font-size: 34px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .featuerd {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .iframe-bg iframe {
+    width: 100%;
+  }
+  .meet-title {
+    flex-direction: column;
+  }
+  .meet-contant {
+    text-align: center;
+  }
+  .meet-card {
+    justify-content: center;
+  }
+  .social-container {
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    background-image: url(./images/footer-bg.png);
+    background-position: center;
+  }
+
+  .fotter-img {
+    padding-top: 60px;
+  }
+
+  .social-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1 row);
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: start;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .social-item {
+    gap: 8px;
+  }
+
+  .social-item p {
+    font-size: 16px;
+  }
+
+  .copy-right {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+}
