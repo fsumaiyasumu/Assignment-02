@@ -171,11 +171,13 @@ header {
 }
 
 .bg-color .container h2 {
-  color: #ffffff;
-  text-align: center;
-  font-size: 48px;
+  font-size: 25px;
   font-weight: 700;
   padding: 50px;
+}
+
+.section-title {
+  text-align: center;
 }
 
 .grid-container {
@@ -254,7 +256,6 @@ header {
 .bg-color,
 .container h2 {
   color: #ffffff;
-  text-align: center;
   font-size: 48px;
   font-weight: 700;
   padding-top: 50px;
@@ -354,6 +355,7 @@ header {
   background-size: cover;
   width: 100%;
 }
+
 .fotter-img {
   display: flex;
   justify-content: center;
@@ -465,6 +467,11 @@ header {
     font-size: 16px;
   }
 
+  .section-title {
+    font-size: 16px;
+    text-align: center;
+  }
+
   .bg-color,
   .container h2 {
     font-size: 34px;
@@ -502,11 +509,6 @@ header {
     flex-wrap: wrap;
   }
 
-  .footer {
-    background-image: url(./images/footer-bg.png);
-    background-position: center;
-  }
-
   .fotter-img {
     padding-top: 60px;
   }
@@ -534,9 +536,6 @@ header {
     font-size: 14px;
   }
 }
-
-
-
 
 /* make a responsive website for medium device */
 
@@ -646,11 +645,6 @@ header {
   }
   .social-container {
     flex-wrap: wrap;
-  }
-
-  .footer {
-    background-image: url(./images/footer-bg.png);
-    background-position: center;
   }
 
   .fotter-img {
